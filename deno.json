@@ -1,0 +1,15 @@
+{
+  "tasks": {
+    "dev": "deno run -A --watch main.ts",
+    "build": "deno compile -A --no-prompt -o blog.exe main.ts"
+  },
+  "imports": {
+    "@fakoua/zip-ts": "jsr:@fakoua/zip-ts@^1.3.1",
+    "@std/archive": "jsr:@std/archive@^0.224.0",
+    "@std/fs": "jsr:@std/fs@^0.224.0",
+    "@std/path": "jsr:@std/path@^0.224.0",
+    "@std/uuid": "jsr:@std/uuid@^0.224.0",
+    "@zone/file-service": "jsr:@zone/file-service@^1.0.2",
+    "@zyc/jsondb": "jsr:@zyc/jsondb@^1.0.1"
+  }
+}
