@@ -5,6 +5,10 @@ import * as mrmime from "https://deno.land/x/mrmime@v2.0.0/mod.ts";
 
 let webFolder = path.join(Deno.cwd(), "WEB");
 
+export function getWebFolder() {
+	return webFolder;
+}
+
 async function setStaticFolder(folder: string) {
 	webFolder = folder;
 	if (!(await fs.exists(webFolder))) {
